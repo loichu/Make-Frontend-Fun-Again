@@ -28,7 +28,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-highlighter: pygments
+highlighter: rouge
 
 sass:
   sass_dir: _sass
