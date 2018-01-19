@@ -7,4 +7,4 @@ The presentation has been made with [revealjs](https://revealjs.com/#/) on [hack
 You can find the presentation [in markdown](https://hackmd.io/GwEwnAzBAMBMCsBaYBDALBRaBG0WJQEZZ8xg1pswBjaNAMwHZ4g=?both)
 and [in slide mode](https://hackmd.io/p/H1yB28iEM#/).
 
-Thanks to @ponsfilus for his collaboration.
+Thanks to [@ponsfilus](https://github.com/ponsfrilus) for his collaboration.
