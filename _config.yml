@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A demo of some advanced bootstrap 4 features
 baseurl: "/Bootstrap4-Showcase" # the subpath of your site, e.g. /blog
 url: "https://loichu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Loic_Hmbrt
+twitter_username: Loic_Hbrt
 github_username:  loichu
 
 # Build settings

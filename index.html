@@ -5,9 +5,6 @@
 layout: default
 ---
 <div class="container">
-
-  <h1>{{ site.url }}</h1>
-
   <div class="section">
     <h3>The Grid</h3>
 
@@ -43,6 +40,8 @@ layout: default
       </div>
     </div>
 
+    <hr>
+
     <div class="example">
       {% highlight html lineos %}
       <div class="container">
@@ -74,5 +73,97 @@ layout: default
         </div>
       </div>
     </div>
+
+    <hr>
+
+    <div class="example">
+      {% highlight html lineos %}
+      <div class="container">
+        <div class="row">
+          <div class="col d-sm-none d-md-block">
+            1 of 3
+          </div>
+          <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0">
+            2 of 3 (wider)
+          </div>
+          <div class="col d-sm-none d-md-block">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      {% endhighlight %}
+
+      <div class="container">
+        <div class="row">
+          <div class="col d-sm-none d-md-block example-div">
+            1 of 3
+          </div>
+          <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0 example-div">
+            2 of 3 (wider)
+          </div>
+          <div class="col d-sm-none d-md-block example-div">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+
+    <h3>Horizontal alignment</h3>
+
+    <div class="example">
+      {% highlight html lineos %}
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+        </div>
+      </div>
+      {% endhighlight %}
+
+      <div class="container">
+        <div class="example-row justify-content-start">
+          <div class="col-4 example-div">One of two columns</div>
+          <div class="col-4 example-div">One of two columns</div>
+        </div>
+        <div class="example-row justify-content-center">
+          <div class="col-4 example-div">One of two columns</div>
+          <div class="col-4 example-div">One of two columns</div>
+        </div>
+        <div class="example-row justify-content-end">
+          <div class="col-4 example-div">One of two columns</div>
+          <div class="col-4 example-div">One of two columns</div>
+        </div>
+        <div class="example-row justify-content-around">
+          <div class="col-4 example-div">One of two columns</div>
+          <div class="col-4 example-div">One of two columns</div>
+        </div>
+        <div class="example-row justify-content-between">
+          <div class="col-4 example-div">One of two columns</div>
+          <div class="col-4 example-div">One of two columns</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

@@ -10,3 +10,12 @@
 .example {
   margin-bottom: 50px;
 }
+
+.section {
+  margin-bottom: 80px;
+}
+
+.example-row {
+  @include make-row();
+  margin-bottom: 20px;
+}
