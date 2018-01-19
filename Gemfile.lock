@@ -8,6 +8,12 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (7.2.5)
+      execjs
+    bootstrap (4.0.0)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -194,6 +200,7 @@ GEM
     minima (2.1.1)
       jekyll (~> 3.3)
     minitest (5.11.1)
+    multi_json (1.13.1)
     multipart-post (2.0.0)
     net-dns (0.8.0)
     nokogiri (1.8.1)
@@ -202,7 +209,10 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
+    popper_js (1.12.9)
     public_suffix (2.0.5)
+    pygments.rb (1.2.1)
+      multi_json (>= 1.0.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -232,11 +242,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.0.0)
   github-pages
   jekyll (~> 3.6.2)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  pygments.rb
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

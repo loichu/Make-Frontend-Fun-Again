@@ -1,0 +1,76 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+<div class="container">
+
+  <div class="section">
+    <h3>The Grid</h3>
+
+    <div class="example">
+      {% highlight HTML linenos %}
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-6">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      {% endhighlight %}
+
+      <div class="container">
+        <div class="row">
+          <div class="col example-div">
+            1 of 3
+          </div>
+          <div class="col-6 example-div">
+            2 of 3 (wider)
+          </div>
+          <div class="col example-div">
+            3 of 3
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {% highlight html lineos %}
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-none d-md-div example-div">
+          1 of 3
+        </div>
+        <div class="col-md-8 col-sm-12 example-div">
+          2 of 3 (wider)
+        </div>
+        <div class="col d-sm-none d-md-div example-div">
+          3 of 3
+        </div>
+      </div>
+    </div>
+    {% endhighlight %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-none d-md-div example-div">
+          1 of 3
+        </div>
+        <div class="col-md-8 col-sm-12 example-div">
+          2 of 3 (wider)
+        </div>
+        <div class="col d-sm-none d-md-div example-div">
+          3 of 3
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
