@@ -8,6 +8,6 @@
 
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = custom_url %}
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: full_base_url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | absolute_url }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
