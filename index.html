@@ -9,21 +9,21 @@ layout: default
     <h3>The Grid</h3>
 
     <div class="example">
-      {% highlight HTML linenos %}
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            1 of 3
-          </div>
-          <div class="col-6">
-            2 of 3 (wider)
-          </div>
-          <div class="col">
-            3 of 3
-          </div>
+{% highlight HTML %}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-6">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
         </div>
       </div>
-      {% endhighlight %}
+    </div>
+{% endhighlight %}
 
       <div class="container">
         <div class="row">
@@ -43,21 +43,21 @@ layout: default
     <hr>
 
     <div class="example">
-      {% highlight html lineos %}
-      <div class="container">
-        <div class="row">
-          <div class="col d-sm-none d-md-block">
-            1 of 3
-          </div>
-          <div class="col-md-8 col-sm-12">
-            2 of 3 (wider)
-          </div>
-          <div class="col d-sm-none d-md-block">
-            3 of 3
-          </div>
+{% highlight html %}
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-none d-md-block">
+          1 of 3
+        </div>
+        <div class="col-md-8 col-sm-12">
+          2 of 3 (wider)
+        </div>
+        <div class="col d-sm-none d-md-block">
+          3 of 3
         </div>
       </div>
-      {% endhighlight %}
+    </div>
+{% endhighlight %}
 
       <div class="container">
         <div class="row">
@@ -77,21 +77,21 @@ layout: default
     <hr>
 
     <div class="example">
-      {% highlight html lineos %}
-      <div class="container">
-        <div class="row">
-          <div class="col d-sm-none d-md-block">
-            1 of 3
-          </div>
-          <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0">
-            2 of 3 (wider)
-          </div>
-          <div class="col d-sm-none d-md-block">
-            3 of 3
-          </div>
+{% highlight html %}
+    <div class="container">
+      <div class="row">
+        <div class="col d-sm-none d-md-block">
+          1 of 3
+        </div>
+        <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0">
+          2 of 3 (wider)
+        </div>
+        <div class="col d-sm-none d-md-block">
+          3 of 3
         </div>
       </div>
-      {% endhighlight %}
+    </div>
+{% endhighlight %}
 
       <div class="container">
         <div class="row">
@@ -112,34 +112,33 @@ layout: default
   <hr>
 
   <div class="section">
-
     <h3>Horizontal alignment</h3>
 
     <div class="example">
-      {% highlight html lineos %}
-      <div class="container">
-        <div class="row justify-content-start">
-          <div class="col-4">One of two columns</div>
-          <div class="col-4">One of two columns</div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-4">One of two columns</div>
-          <div class="col-4">One of two columns</div>
-        </div>
-        <div class="row justify-content-end">
-          <div class="col-4">One of two columns</div>
-          <div class="col-4">One of two columns</div>
-        </div>
-        <div class="row justify-content-around">
-          <div class="col-4">One of two columns</div>
-          <div class="col-4">One of two columns</div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-4">One of two columns</div>
-          <div class="col-4">One of two columns</div>
-        </div>
+{% highlight html %}
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4">One of two columns</div>
+        <div class="col-4">One of two columns</div>
       </div>
-      {% endhighlight %}
+      <div class="row justify-content-center">
+        <div class="col-4">One of two columns</div>
+        <div class="col-4">One of two columns</div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-4">One of two columns</div>
+        <div class="col-4">One of two columns</div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4">One of two columns</div>
+        <div class="col-4">One of two columns</div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-4">One of two columns</div>
+        <div class="col-4">One of two columns</div>
+      </div>
+    </div>
+{% endhighlight %}
 
       <div class="container">
         <div class="example-row justify-content-start">
@@ -164,6 +163,102 @@ layout: default
         </div>
       </div>
     </div>
+  </div>
 
+  <hr>
+
+  <div class="section">
+    <h3>Vertical alignment</h3>
+
+    <div class="example">
+{% highlight html %}
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+      </div>
+    </div>
+{% endhighlight %}
+
+      <div class="container">
+        <div class="big-row align-items-start">
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+        </div>
+        <div class="big-row align-items-center">
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+        </div>
+        <div class="big-row align-items-end">
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+          <div class="col example-div">One of three columns</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <h3>Sass mixins (custom class)</h3>
+
+    <div class="example">
+      <p>We have this mixin:</p>
+{% highlight scss %}
+    .example-content-main {
+      @include make-col-ready();
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-up(lg) {
+        @include make-col(8);
+      }
+    }
+{% endhighlight %}
+    </div>
+
+    <div class="example">
+      <p>So those two codes should render the same way:<p>
+
+{% highlight html %}
+    <div class="example-content-main">
+      <!-- content here -->
+    </div>
+{% endhighlight %}
+      <div class="example-content-main example-div">
+        <!-- content here -->
+      </div>
+    </div>
+
+    <div class="example">
+{% highlight html %}
+    <div class="container"> <!-- .container set a width -->
+      <div class="col-sm-6 col-lg-8">
+        <!-- content here -->
+      </div>
+    </div>
+{% endhighlight %}
+      <p>As you can see the only difference is a padding because of the .container class</p>
+      <div class="container-fluid"> <!-- .container set a width -->
+        <div class="col-sm-6 col-lg-8 example-div">
+          <!-- content here -->
+        </div>
+      </div>
+    </div>
   </div>
 </div>
