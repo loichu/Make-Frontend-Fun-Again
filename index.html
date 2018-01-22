@@ -246,18 +246,49 @@ layout: default
 
     <div class="example">
 {% highlight html %}
-    <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;"> <!-- .container set a width -->
+    <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
       <div class="col-6 col-lg-8">
         <!-- content here -->
       </div>
     </div>
 {% endhighlight %}
-      <p>As you can see the only difference is a padding because of the .container class</p>
-      <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;"> <!-- .container set a width -->
+      <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
         <div class="col-6 col-lg-8 example-div">
           <!-- content here -->
         </div>
       </div>
+
+      <div class="explanation-below">
+        <p>
+          As you can see the only difference is a padding because of the
+          .container class. That's why we remove it the bad way. We could also
+          add some padding in the .example-content-main but that's not what we
+          want in the current example. Another option would be to @extend .container-fluid.
+        </p>
+     </div>
     </div>
+
+    <div class="example">
+{% highlight scss %}
+  .container-fluid-no-padding {
+    @extend .container-fluid;
+
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+{% endhighlight %}
+{% highlight html %}
+    <div class="container-fluid-no-padding">
+      <div class="col-6 col-lg-8">
+        <!-- content here -->
+      </div>
+    </div>
+{% endhighlight %}
+    <div class="container-fluid-no-padding">
+      <div class="col-6 col-lg-8 example-div">
+        <!-- content here -->
+      </div>
+    </div>
+  </div>
   </div>
 </div>

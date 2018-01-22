@@ -15,6 +15,10 @@
   margin-bottom: 80px;
 }
 
+.explanation-below {
+  padding-top: 15px;
+}
+
 .example-row {
   @include make-row();
   margin-bottom: 20px;
@@ -28,10 +32,17 @@
 
 .example-content-main {
   @include make-col-ready();
-  
+
   @include make-col(6);
 
   @include media-breakpoint-up(lg) {
     @include make-col(8);
   }
+}
+
+.container-fluid-no-padding {
+  @extend .container-fluid;
+
+  padding-right: 0px;
+  padding-left: 0px;
 }
