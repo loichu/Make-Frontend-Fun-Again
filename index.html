@@ -46,13 +46,13 @@ layout: default
 {% highlight html %}
     <div class="container">
       <div class="row">
-        <div class="col d-sm-none d-md-block">
+        <div class="col d-xs-none d-md-block">
           1 of 3
         </div>
-        <div class="col-md-8 col-sm-12">
+        <div class="col-md-8 col-xs-12">
           2 of 3 (wider)
         </div>
-        <div class="col d-sm-none d-md-block">
+        <div class="col d-xs-none d-md-block">
           3 of 3
         </div>
       </div>
@@ -61,13 +61,13 @@ layout: default
 
       <div class="container">
         <div class="row">
-          <div class="col d-sm-none d-md-block example-div">
+          <div class="col d-xs-none d-md-block example-div">
             1 of 3
           </div>
-          <div class="col-md-8 col-sm-block example-div">
+          <div class="col-md-8 col-xs-block example-div">
             2 of 3 (wider)
           </div>
-          <div class="col d-sm-none d-md-block example-div">
+          <div class="col d-xs-none d-md-block example-div">
             3 of 3
           </div>
         </div>
@@ -80,13 +80,13 @@ layout: default
 {% highlight html %}
     <div class="container">
       <div class="row">
-        <div class="col d-sm-none d-md-block">
+        <div class="col d-xs-none d-md-block">
           1 of 3
         </div>
-        <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0">
+        <div class="col-md-8 col-xs-10 offset-xs-1 offset-md-0">
           2 of 3 (wider)
         </div>
-        <div class="col d-sm-none d-md-block">
+        <div class="col d-xs-none d-md-block">
           3 of 3
         </div>
       </div>
@@ -95,13 +95,13 @@ layout: default
 
       <div class="container">
         <div class="row">
-          <div class="col d-sm-none d-md-block example-div">
+          <div class="col d-xs-none d-md-block example-div">
             1 of 3
           </div>
-          <div class="col-md-8 col-sm-10 offset-sm-1 offset-md-0 example-div">
+          <div class="col-md-8 col-xs-10 offset-xs-1 offset-md-0 example-div">
             2 of 3 (wider)
           </div>
-          <div class="col d-sm-none d-md-block example-div">
+          <div class="col d-xs-none d-md-block example-div">
             3 of 3
           </div>
         </div>
@@ -222,7 +222,7 @@ layout: default
     .example-content-main {
       @include make-col-ready();
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(xs) {
         @include make-col(6);
       }
       @include media-breakpoint-up(lg) {
@@ -248,14 +248,14 @@ layout: default
     <div class="example">
 {% highlight html %}
     <div class="container"> <!-- .container set a width -->
-      <div class="col-sm-6 col-lg-8">
+      <div class="col-xs-6 col-lg-8">
         <!-- content here -->
       </div>
     </div>
 {% endhighlight %}
       <p>As you can see the only difference is a padding because of the .container class</p>
       <div class="container-fluid"> <!-- .container set a width -->
-        <div class="col-sm-6 col-lg-8 example-div">
+        <div class="col-xs-6 col-lg-8 example-div">
           <!-- content here -->
         </div>
       </div>
