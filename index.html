@@ -219,16 +219,15 @@ layout: default
     <div class="example">
       <p>We have this mixin:</p>
 {% highlight scss %}
-    .example-content-main {
-      @include make-col-ready();
+  .example-content-main {
+    @include make-col-ready();
 
-      @include media-breakpoint-up(xs) {
-        @include make-col(6);
-      }
-      @include media-breakpoint-up(lg) {
-        @include make-col(8);
-      }
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(8);
     }
+  }
 {% endhighlight %}
     </div>
 
