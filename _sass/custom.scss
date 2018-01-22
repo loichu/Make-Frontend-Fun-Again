@@ -28,10 +28,9 @@
 
 .example-content-main {
   @include make-col-ready();
+  
+  @include make-col(6);
 
-  @include media-breakpoint-up(sm) {
-    @include make-col(6);
-  }
   @include media-breakpoint-up(lg) {
     @include make-col(8);
   }
