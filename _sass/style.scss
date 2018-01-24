@@ -1,0 +1,53 @@
+.example-div {
+  height: 50px;
+  line-height: 50px;
+  background-color: #999;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.example {
+  margin-bottom: 50px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.explanation-below {
+  padding-top: 15px;
+}
+
+.example-row {
+  @include make-row();
+  margin-bottom: 20px;
+}
+
+.big-row {
+  @extend .example-row;
+  height: 70px;
+  background-color: #299;
+}
+
+.example-content-main {
+  @include make-col-ready();
+
+  @include make-col(6);
+
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }
+}
+
+.container-fluid-no-padding {
+  @extend .container-fluid;
+
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@mixin keep-container-quiet {
+  padding-left: 0px;
+  padding-right: 0px;
+}
