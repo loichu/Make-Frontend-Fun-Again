@@ -1,15 +1,15 @@
 <footer class="site-footer">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-md-4">
+  <div class="container footer">
+    <div class="row justify-content-around align-items-center footer">
+      <div class="col-md-4" style="text-align: center;">
         <span class="text-muted">&copy; {{ site.title | escape }}</span>
       </div>
       {% if site.author %}
-      <div class="col-md-4">
+      <div class="col-md-4" style="text-align: center;">
         <span class="text-muted"><a href="mailto:{{ site.email }}">{{ site.author | escape }}</a></span>
       </div>
       {% endif %}
-      <div class="col-md-4">
+      <div class="col-md-4 justify-content-center">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>

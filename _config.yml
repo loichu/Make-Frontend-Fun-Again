@@ -33,6 +33,11 @@ highlighter: rouge
 sass:
   sass_dir: _sass
 
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
