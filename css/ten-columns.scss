@@ -1,0 +1,138 @@
+---
+# Convert this file to css
+---
+@charset 'utf-8';
+
+$grid-columns: 10;
+
+@import 'bootstrap/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+html {
+  font-size: 10px;
+
+  overflow-x: hidden;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+
+  @include gradient-x($start-color: #026, $end-color: #246, $start-percent: 0%, $end-percent: 100%);
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    bottom: 450px;
+    top: 0;
+  }
+
+  > h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    text-align: center;
+    transform: rotate(-10deg);
+    color: #400;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 10rem;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: lightgrey;
+
+  @include media-breakpoint-up(sm) {
+    position: absolute;
+    height: 150px;
+    bottom: 0px;
+  }
+
+  > .container {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+  }
+
+  > ul {
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+  }
+}
+
+ul.social-media-list {
+  text-align: left;
+}
+
+
+
+.categories {
+  @include make-container();
+  //min-height: 100px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    bottom: 150px;
+  }
+
+  > .row {
+    min-height: 300px;
+  }
+}
+
+.category {
+  border: 1px solid #000;
+  display: flex;
+
+  &#npm {
+    background-color: #235C7C;
+  }
+
+  &#gulp {
+    background-color: #cf4647;
+  }
+
+  &#browserify {
+    background-color: #222;
+  }
+
+  &#sass {
+    background-color: #f1f1f1;
+  }
+
+  &#bootstrap {
+    background-color: #563D7C;
+  }
+
+  > img {
+    width: 300px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.5, 1.5); /** default is 1, scale it to 1.5 */
+      opacity: 1;
+    }
+
+    &#bootstrap-logo {
+      width: 180px !important;
+    }
+  }
+}
