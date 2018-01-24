@@ -5,7 +5,20 @@
 
     {% include header.html %}
 
-    {{ content }}
+    {% if page.online %}
+      {{ content }}
+    {% else %}
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <p>
+            Sorry, this page hasn't been released for now. Choose one of the following:
+          </p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          {% include released_pages.html %}
+        </div>
+      </div>
+    {% endif %}
 
     {% include footer.html %}
 
