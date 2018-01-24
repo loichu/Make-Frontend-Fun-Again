@@ -1,6 +1,6 @@
 # Bootstrap4-Showcase
 
-Visi this github page [here](https://loichu.github.io/Bootstrap4-Showcase). 
+Visi this github page [here](https://loichu.github.io/Make-Frontend-Fun-Again). 
 
 This website has for purpose to demonstrate bootstrap examples of [this presentation](https://hackmd.io/p/H1yB28iEM#/).
 
