@@ -16,8 +16,7 @@
   background-color: #b2b2b2;
   border: 1px solid #000;
 
-  padding-top: .3rem;
-  padding-bottom: .3rem;
+  @include flex-center;
 
   text-align: center;
 
@@ -26,17 +25,9 @@
 
   height: 40px;
 
-  @include media-breakpoint-up(sm) {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-  }
-
   @include media-breakpoint-up(md) {
     height: 70px;
     line-height: 70px;
-
-    padding-top: .1rem;
-    padding-bottom: .1rem;
   }
 }
 
