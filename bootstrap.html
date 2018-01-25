@@ -6,134 +6,64 @@ layout: default
 permalink: bootstrap
 online: true
 ---
-<div class="container">
-  <h1>Bootstrap</h1>
+<h1>Bootstrap</h1>
 
-  <h2>What is boostrap</h2>
+<h2>What is boostrap</h2>
+<p>
+  Bootstrap is a css framework. It provides a grid, some components and some
+  sass variables and mixins. This is very convenient for fast developement.
+  This website shows some grid and sass features. The components are useful
+  for a quick frontend but we lose the graphical identity. My goal is to show
+  that we can use bootstrap without losing our identity.
+</p>
+
+<h2>Mobile first</h2>
+<p>
+  Bootstrap provides responsive breakpoints. That means that we can adapt the
+  size of our elements depending on the screen size.
+</p>
+<p>
+  The strategy chosen by bootstrap is mobile first. If we don't specify any
+  breakpoint, the size will apply to all screen sizes beginning by the smallest.
+  If we specify one, the spacing will apply to the one that is specified and
+  the bigger ones. Thus you need to think about what happens when the screen
+  size increase.
+</p>
+
+<div class="section">
+  <h2>The Grid</h2>
+
   <p>
-    Bootstrap is a css framework. It provides a grid, some components and some
-    sass variables and mixins. This is very convenient for fast developement.
-    This website shows some grid and sass features. The components are useful
-    for a quick frontend but we lose the graphical identity. My goal is to show
-    that we can use bootstrap without losing our identity.
+
   </p>
 
-  <h2>Mobile first</h2>
-  <p>
-    Bootstrap provides responsive breakpoints. That means that we can adapt the
-    size of our elements depending on the screen size.
-  </p>
-  <p>
-    The strategy chosen by bootstrap is mobile first. If we don't specify any
-    breakpoint, the size will apply to all screen sizes beginning by the smallest.
-    If we specify one, the spacing will apply to the one that is specified and
-    the bigger ones. Thus you need to think about what happens when the screen
-    size increase.
-  </p>
-
-  <div class="section">
-    <h2>The Grid</h2>
-
-    <p>
-
-    </p>
-
-    <div class="example">
+  <div class="example">
 {% highlight HTML %}
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          1 of 3
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col">
-          3 of 3
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-6">
+        2 of 3 (wider)
+      </div>
+      <div class="col">
+        3 of 3
       </div>
     </div>
+  </div>
 {% endhighlight %}
 
-      <div class="container">
-        <div class="row">
-          <div class="col example-div">
-            1 of 3
-          </div>
-          <div class="col-6 example-div">
-            2 of 3 (wider)
-          </div>
-          <div class="col example-div">
-            3 of 3
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="example">
-{% highlight html %}
     <div class="container">
       <div class="row">
-        <div class="col d-none d-md-flex">
+        <div class="col example-div">
           1 of 3
         </div>
-        <div class="col-md-8 col-12">
+        <div class="col-6 example-div">
           2 of 3 (wider)
         </div>
-        <div class="col d-none d-md-flex">
+        <div class="col example-div">
           3 of 3
-        </div>
-      </div>
-    </div>
-{% endhighlight %}
-
-      <div class="container">
-        <div class="row">
-          <div class="col d-none d-md-flex example-div">
-            1 of 3
-          </div>
-          <div class="col-md-8 col-block example-div">
-            2 of 3 (wider)
-          </div>
-          <div class="col d-none d-md-flex example-div">
-            3 of 3
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="example">
-{% highlight html %}
-    <div class="container">
-      <div class="row">
-        <div class="col d-none d-md-flex">
-          1 of 3
-        </div>
-        <div class="col-md-8 col-10 offset-1 offset-md-0">
-          2 of 3 (wider)
-        </div>
-        <div class="col d-none d-md-flex">
-          3 of 3
-        </div>
-      </div>
-    </div>
-{% endhighlight %}
-
-      <div class="container">
-        <div class="row">
-          <div class="col d-none d-md-flex example-div">
-            1 of 3
-          </div>
-          <div class="col-md-8 col-10 offset-1 offset-md-0 example-div">
-            2 of 3 (wider)
-          </div>
-          <div class="col d-none d-md-flex example-div">
-            3 of 3
-          </div>
         </div>
       </div>
     </div>
@@ -141,55 +71,33 @@ online: true
 
   <hr>
 
-  <div class="section">
-    <h2>Horizontal alignment</h2>
-
-    <div class="example">
+  <div class="example">
 {% highlight html %}
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-4">One of two columns</div>
-        <div class="col-4">One of two columns</div>
+  <div class="container">
+    <div class="row">
+      <div class="col d-none d-md-flex">
+        1 of 3
       </div>
-      <div class="row justify-content-center">
-        <div class="col-4">One of two columns</div>
-        <div class="col-4">One of two columns</div>
+      <div class="col-md-8 col-12">
+        2 of 3 (wider)
       </div>
-      <div class="row justify-content-end">
-        <div class="col-4">One of two columns</div>
-        <div class="col-4">One of two columns</div>
-      </div>
-      <div class="row justify-content-around">
-        <div class="col-4">One of two columns</div>
-        <div class="col-4">One of two columns</div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col-4">One of two columns</div>
-        <div class="col-4">One of two columns</div>
+      <div class="col d-none d-md-flex">
+        3 of 3
       </div>
     </div>
+  </div>
 {% endhighlight %}
 
-      <div class="container">
-        <div class="example-row justify-content-start">
-          <div class="col-4 example-div">One of two columns</div>
-          <div class="col-4 example-div">One of two columns</div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-md-flex example-div">
+          1 of 3
         </div>
-        <div class="example-row justify-content-center">
-          <div class="col-4 example-div">One of two columns</div>
-          <div class="col-4 example-div">One of two columns</div>
+        <div class="col-md-8 col-block example-div">
+          2 of 3 (wider)
         </div>
-        <div class="example-row justify-content-end">
-          <div class="col-4 example-div">One of two columns</div>
-          <div class="col-4 example-div">One of two columns</div>
-        </div>
-        <div class="example-row justify-content-around">
-          <div class="col-4 example-div">One of two columns</div>
-          <div class="col-4 example-div">One of two columns</div>
-        </div>
-        <div class="example-row justify-content-between">
-          <div class="col-4 example-div">One of two columns</div>
-          <div class="col-4 example-div">One of two columns</div>
+        <div class="col d-none d-md-flex example-div">
+          3 of 3
         </div>
       </div>
     </div>
@@ -197,128 +105,218 @@ online: true
 
   <hr>
 
-  <div class="section">
-    <h2>Vertical alignment</h2>
-
-    <div class="example">
+  <div class="example">
 {% highlight html %}
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
+  <div class="container">
+    <div class="row">
+      <div class="col d-none d-md-flex">
+        1 of 3
       </div>
-      <div class="row align-items-center">
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
+      <div class="col-md-8 col-10 offset-1 offset-md-0">
+        2 of 3 (wider)
       </div>
-      <div class="row align-items-end">
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
-        <div class="col">One of three columns</div>
+      <div class="col d-none d-md-flex">
+        3 of 3
       </div>
     </div>
+  </div>
 {% endhighlight %}
 
-      <div class="container">
-        <div class="big-row align-items-start">
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-md-flex example-div">
+          1 of 3
         </div>
-        <div class="big-row align-items-center">
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
+        <div class="col-md-8 col-10 offset-1 offset-md-0 example-div">
+          2 of 3 (wider)
         </div>
-        <div class="big-row align-items-end">
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
-          <div class="col example-div">One of three columns</div>
+        <div class="col d-none d-md-flex example-div">
+          3 of 3
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <hr>
+<hr>
 
-  <div class="section">
-    <h2>Sass mixins (custom class)</h2>
+<div class="section">
+  <h2>Horizontal alignment</h2>
 
-    <div class="example">
-      <p>We have this mixin:</p>
+  <div class="example">
+{% highlight html %}
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4">One of two columns</div>
+      <div class="col-4">One of two columns</div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4">One of two columns</div>
+      <div class="col-4">One of two columns</div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-4">One of two columns</div>
+      <div class="col-4">One of two columns</div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-4">One of two columns</div>
+      <div class="col-4">One of two columns</div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-4">One of two columns</div>
+      <div class="col-4">One of two columns</div>
+    </div>
+  </div>
+{% endhighlight %}
+
+    <div class="container">
+      <div class="example-row justify-content-start">
+        <div class="col-4 example-div">One of two columns</div>
+        <div class="col-4 example-div">One of two columns</div>
+      </div>
+      <div class="example-row justify-content-center">
+        <div class="col-4 example-div">One of two columns</div>
+        <div class="col-4 example-div">One of two columns</div>
+      </div>
+      <div class="example-row justify-content-end">
+        <div class="col-4 example-div">One of two columns</div>
+        <div class="col-4 example-div">One of two columns</div>
+      </div>
+      <div class="example-row justify-content-around">
+        <div class="col-4 example-div">One of two columns</div>
+        <div class="col-4 example-div">One of two columns</div>
+      </div>
+      <div class="example-row justify-content-between">
+        <div class="col-4 example-div">One of two columns</div>
+        <div class="col-4 example-div">One of two columns</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="section">
+  <h2>Vertical alignment</h2>
+
+  <div class="example">
+{% highlight html %}
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+      <div class="col">One of three columns</div>
+    </div>
+  </div>
+{% endhighlight %}
+
+    <div class="container">
+      <div class="big-row align-items-start">
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+      </div>
+      <div class="big-row align-items-center">
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+      </div>
+      <div class="big-row align-items-end">
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+        <div class="col example-div">One of three columns</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="section">
+  <h2>Sass mixins (custom class)</h2>
+
+  <div class="example">
+    <p>We have this mixin:</p>
 {% highlight scss %}
-  .example-content-main {
-    @include make-col-ready();
+.example-content-main {
+  @include make-col-ready();
 
-    @include make-col(6);
+  @include make-col(6);
 
-    @include media-breakpoint-up(lg) {
-      @include make-col(8);
-    }
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
   }
+}
 {% endhighlight %}
-    </div>
+  </div>
 
-    <div class="example">
-      <p>So those two codes should render the same way:<p>
+  <div class="example">
+    <p>So those two codes should render the same way:<p>
 
 {% highlight html %}
-    <div class="example-content-main">
+  <div class="example-content-main">
+    <!-- content here -->
+  </div>
+{% endhighlight %}
+    <div class="example-content-main example-div">
       <!-- content here -->
     </div>
-{% endhighlight %}
-      <div class="example-content-main example-div">
-        <!-- content here -->
-      </div>
-    </div>
+  </div>
 
-    <div class="example">
+  <div class="example">
 {% highlight html %}
+  <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+    <div class="col-6 col-lg-8">
+      <!-- content here -->
+    </div>
+  </div>
+{% endhighlight %}
     <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
-      <div class="col-6 col-lg-8">
+      <div class="col-6 col-lg-8 example-div">
         <!-- content here -->
       </div>
     </div>
-{% endhighlight %}
-      <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
-        <div class="col-6 col-lg-8 example-div">
-          <!-- content here -->
-        </div>
-      </div>
 
-      <div class="explanation-below">
-        <p>
-          As you can see the only difference is a padding because of the
-          .container class. That's why we remove it the bad way. We could also
-          add some padding in the .example-content-main but that's not what we
-          want in the current example. Another option would be to @extend .container-fluid.
-        </p>
-     </div>
-    </div>
+    <div class="explanation-below">
+      <p>
+        As you can see the only difference is a padding because of the
+        .container class. That's why we remove it the bad way. We could also
+        add some padding in the .example-content-main but that's not what we
+        want in the current example. Another option would be to @extend .container-fluid.
+      </p>
+   </div>
+  </div>
 
-    <div class="example">
+  <div class="example">
 {% highlight scss %}
-  .container-fluid-no-padding {
-    @extend .container-fluid;
+.container-fluid-no-padding {
+  @extend .container-fluid;
 
-    padding-right: 0px;
-    padding-left: 0px;
-  }
+  padding-right: 0px;
+  padding-left: 0px;
+}
 {% endhighlight %}
 {% highlight html %}
-    <div class="container-fluid-no-padding">
-      <div class="col-6 col-lg-8">
-        <!-- content here -->
-      </div>
+  <div class="container-fluid-no-padding">
+    <div class="col-6 col-lg-8">
+      <!-- content here -->
     </div>
+  </div>
 {% endhighlight %}
     <div class="container-fluid-no-padding">
       <div class="col-6 col-lg-8 example-div">
         <!-- content here -->
       </div>
     </div>
-  </div>
   </div>
 </div>
