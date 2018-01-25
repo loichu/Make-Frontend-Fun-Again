@@ -6,7 +6,8 @@
 $grid-columns: 10;
 
 @import 'bootstrap/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import 'fonts';
+@import 'variables';
 
 html {
   font-size: 10px;
@@ -43,7 +44,7 @@ header {
     font-size: 5rem;
     text-align: center;
     transform: rotate(-10deg);
-    color: #C31718;
+    color: $title_color;
 
     @include media-breakpoint-up(lg) {
       font-size: 10rem;

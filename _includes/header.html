@@ -1,10 +1,23 @@
 <header class="site-header" role="banner">
 
-  {% assign custom_url = site.url | append: site.baseurl %}
-  {% assign full_base_url = custom_url %}
+  {% assign custom_url = site.url | append: site.baseurl %} {% assign full_base_url = custom_url %}
 
-  <div class="container">
-    <h1 class="row justify-content-center">{{ site.title | escape }}</h1>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{ '/' | absolute_url }}">Make Frontend Fun Again</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ '/' | absolute_url }}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/bootstrap' | absolute_url }}">Bootstrap</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 </header>
