@@ -3,3 +3,23 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin absolute-position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+@mixin absolute-position-stretch-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}

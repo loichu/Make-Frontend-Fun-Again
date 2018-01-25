@@ -16,18 +16,27 @@
   background-color: #b2b2b2;
   border: 1px solid #000;
 
-  @include flex-center;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
 
   text-align: center;
-  vertical-align: middle;
 
   padding-left: 0px;
   padding-right: 0px;
 
   height: 40px;
 
+  @include media-breakpoint-up(sm) {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
   @include media-breakpoint-up(md) {
     height: 70px;
+    line-height: 70px;
+
+    padding-top: .1rem;
+    padding-bottom: .1rem;
   }
 }
 
@@ -45,6 +54,7 @@
 
 .example-row {
   @include make-row();
+  position: relative;
   margin-bottom: 20px;
 }
 
@@ -54,7 +64,7 @@
   background-color: #299;
 
   @include media-breakpoint-up(md) {
-    height: 1200px;
+    height: 120px;
   }
 }
 
