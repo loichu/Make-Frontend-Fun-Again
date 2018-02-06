@@ -19,7 +19,7 @@ image-brand: /images/gulp-logo-pink-text.svg
 
 ## Dev with Gulp and Browsersync
 
-![]({{ '/images/browsersync.svg' | absolute_url }}){:.image-content}
+![BrowserSync]({{ '/images/browsersync.svg' | absolute_url }}){:.image-content}
 
 ## Time-saving synchronised browser testing.
 
