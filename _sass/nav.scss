@@ -1,0 +1,14 @@
+.navbar {
+  background-color: $backround_color !important;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: $title_color;
+
+  > a {
+    color: #C31718;
+  }
+}

@@ -8,9 +8,8 @@
 
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = custom_url %}
-  {% if page.columns == 10 %}
+  {% if page.css == 'ten-columns' %}
     <link rel="stylesheet" href={{ "/css/ten-columns.css" | absolute_url }}>
-    <!--link rel="stylesheet" href={{ "/css/main.css" | absolute_url }}-->
   {% else %}
     <link rel="stylesheet" href={{ "/css/main.css" | absolute_url }}>
   {% endif %}

@@ -1,15 +1,5 @@
-.navbar {
-  background-color: $backround_color !important;
-}
-
-.navbar-brand {
-  font-family: 'Bangers', cursive;
-  font-size: 2rem;
-  color: $title_color;
-
-  > a {
-    color: #C31718;
-  }
+h1, h2 {
+  border-bottom: 1px solid #eee;
 }
 
 .example-div {
@@ -76,7 +66,58 @@
   padding-left: 0px;
 }
 
-@mixin keep-container-quiet {
-  padding-left: 0px;
-  padding-right: 0px;
+
+.image-brand {
+  width: $brand-image-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: $brand-image-spacing;
+  margin-bottom: $brand-image-spacing;
+
+  @include media-breakpoint-up(sm){
+    width: $brand-image-width + 20;
+    margin-top: $brand-image-spacing + 10;
+    margin-bottom: $brand-image-spacing + 10;
+  }
+
+  @include media-breakpoint-up(md){
+    width: $brand-image-width + 50;
+    margin-top: $brand-image-spacing + 20;
+    margin-bottom: $brand-image-spacing + 20;
+  }
+
+  @include media-breakpoint-up(lg){
+    width: $brand-image-width + 80;
+    margin-top: $brand-image-spacing + 30;
+    margin-bottom: $brand-image-spacing + 30;
+  }
+
+  @include media-breakpoint-up(lg){
+    width: $brand-image-width + 100;
+    margin-top: $brand-image-spacing + 30;
+    margin-bottom: $brand-image-spacing + 30;
+  }
+}
+
+.image-content {
+  width: $brand-image-width;
+  display: block;
+
+  @include media-breakpoint-up(sm){
+    width: $brand-image-width + 20;
+  }
+
+  @include media-breakpoint-up(md){
+    width: $brand-image-width + 50;
+  }
+
+  @include media-breakpoint-up(lg){
+    width: $brand-image-width + 80;
+  }
+
+  @include media-breakpoint-up(lg){
+    width: $brand-image-width + 100;
+  }
 }

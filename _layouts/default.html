@@ -8,6 +8,13 @@
 
     <div class="container">
       {% if page.online %}
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {% if page.image-brand %}
+          <img class="image-brand" src="{{ page.image-brand | absolute_url }}" alt="{{ page.permalink }}" />
+          <hr>
+        {% endif %}
         {{ content }}
       {% else %}
         <div class="row justify-content-center align-items-center">

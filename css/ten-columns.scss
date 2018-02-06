@@ -8,6 +8,7 @@ $grid-columns: 10;
 @import 'bootstrap/bootstrap';
 @import 'fonts';
 @import 'variables';
+@import "footer";
 
 html {
   font-size: 10px;
@@ -30,13 +31,20 @@ header {
   width: 100%;
   min-height: 200px;
 
-  //@include gradient-x($start-color: #026, $end-color: #246, $start-percent: 0%, $end-percent: 100%);
   @include gradient-x($start-color: #20E47B, $end-color: #20FF7B, $start-percent: 0%, $end-percent: 100%);
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     position: absolute;
-    bottom: 450px;
+    bottom: 230px;
     top: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    bottom: 300px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    bottom: 450px;
   }
 
   > h1 {
@@ -47,32 +55,12 @@ header {
     color: $title_color;
 
     @include media-breakpoint-up(lg) {
+      font-size: 8rem;
+    }
+
+    @include media-breakpoint-up(xl) {
       font-size: 10rem;
     }
-  }
-}
-
-footer {
-  width: 100%;
-  background-color: lightgrey;
-
-  @include media-breakpoint-up(sm) {
-    position: absolute;
-    height: 150px;
-    bottom: 0px;
-  }
-
-  > .container {
-    height: 100%;
-    width: 100%;
-    max-width: none;
-  }
-
-  > ul {
-    display:-moz-inline-stack;
-    display:inline-block;
-    zoom:1;
-    *display:inline;
   }
 }
 
@@ -80,20 +68,40 @@ ul.social-media-list {
   text-align: left;
 }
 
-
+footer {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    bottom: 0px;
+  }
+}
 
 .categories {
   @include make-container();
-  //min-height: 100px;
   width: 100%;
 
   @include media-breakpoint-up(md) {
     position: absolute;
+    bottom: 80px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    bottom: 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
     bottom: 150px;
   }
 
   > .row {
-    min-height: 300px;
+    min-height: 150px;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 200px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      min-height: 300px;
+    }
   }
 }
 
@@ -125,8 +133,16 @@ ul.social-media-list {
     height: 80px;
     cursor: pointer;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       height: auto;
+      width: 100px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 150px;
+    }
+
+    @include media-breakpoint-up(xl) {
       width: 300px;
       position: relative;
       opacity: 0.5;
